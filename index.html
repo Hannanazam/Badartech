@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xord</title>
+  <link rel="stylesheet" href="assest/style.css">
+  <link rel="stylesheet" href="assest/animate.css">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <?php require_once('index.php'); ?>
+</head>
+
+<body>
+
+
+  <!-- <script>
+    function alertWarning() {
+      $(document).ready(function () {
+        $('.alert-warning').addClass("show");
+        $('.alert-warning').removeClass("hide");
+        $('.alert-warning').addClass("showAlert");
+        setTimeout(function () {
+          $('.alert-warning').removeClass("show");
+          $('.alert-warning').addClass("hide");
+        }, 5000);
+      });
+
+    }
+    function alertSuccess() {
+      $(document).ready(function () {
+        $('.alert-success').removeClass("hide");
+        $('.alert-success').addClass("showAlert");
+        $('.alert-success').addClass("show");
+        setTimeout(function () {
+          $('.alert-success').removeClass("show");
+          $('.alert-success').addClass("hide");
+        }, 5000);
+      });
+
+    }
+  </script> -->
+
+
+  <!-- <?php
+if(isset($_POST["send"])){
+  $FName="First Name : ".$_POST["fname"]."\n";
+  $Subject= " Subject : Testing"."\n";
+  $Email=" User Email : ".$_POST["email"]."\n";
+  $Message=" User Message : ".$_POST["message"];
+
+
+  $from = "hannanazam200@gmail.com";
+  
+  $Message = $FName .' '.$Subject.' '.$Email.''.$Message;
+  
+  $to = "hannanazam200@gmail.com";
+  $headers = "From:" . $from;
+    
+    if($FName !="" && $Subject !="" && $Email !="" && $Message !="")
+    {
+        if(mail($to,$Subject,$Message,$headers))
+  {
+    
+    echo '<script type="text/javascript">alertSuccess() </script>';
+      
+     
+   
+  }
+  else
+  { 
+      echo '<script type="text/javascript">alertWarning()</script>';
+  
+  }
+}
+  }
+?> -->
+
+  <!-- navbar -->
+  <section id="navbar">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="images/main-logo.png" width="122" height="57" class="img-fluid"
+              alt=""></a>
+          <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="fas fa-bars text-white"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#solution">Solution</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#team">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#workimg">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#publications">Publications</a>
+              </li>
+            </ul>
+            <div class="d-flex navbutton">
+              <a href="#contact" class="btn1 background-color-blue shadow-none" type="submit">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </section>
+  <!-- navbar -->
+
+
+  <!-- home  -->
+  <section id="home">
+    <div class="main-container">
+      <div class="elementor-background-video-container">
+        <video class="elementor-background-video-hosted elementor-html5-video" autoplay="" muted="" playsinline=""
+          loop="" src="images/bg-videos3.mp4" style="width: 100%; height: 100%;"></video>
+      </div>
+      <div class="elementor-background-overlay"></div>
+
+
+      <div class="maincontent">
+        <div class="row">
+          <div class="col-lg-7 col-md-7 col-sm-12 setwidth wow slideInLeft">
+            <h2>Decentralizing the world, one startup at a time.</h2>
+            <p class="py-4">Xord is a blockchain solution provider company. At Xord, We develop decentralized
+              solutions making world trustworthy & secure place, using blockchain technology.</p>
+            <div class="homebutton">
+              <button class="btn1 background-color-blue shadow-none" type="submit">Partner With Xord</button>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-5 col-sm-12 setposition wow slideInRight">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4 my-auto mx-auto">
+                  <center>
+                    <img src="images/home1.png" class="img-fluid" alt="card">
+                  </center>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Uniswap v3: Power To Liquidity Providers</h5>
+                    <p class="card-text">Uniswap v3 mitigates the problem of capital inefficiency by allowing
+                      liquidity providers to concentrate their</p>
+                    <button class="btn color-blue shadow-none">READ MORE!</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4 my-auto mx-auto">
+                  <center>
+                    <img src="images/home2.jpg" class="img-fluid" alt="card">
+                  </center>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Case Study: Phoenix DAO Event Marketplace</h5>
+                    <p class="card-text">Phoenix DAO Event Marketplace is a one-stop for all your entertainment
+                      related to events. Here you can find</p>
+                    <a class="btn color-blue shadow-none">READ MORE!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- home  -->
+
+  <!-- solution  -->
+  <section id="solution">
+    <div class="mainheading wow fadeInUp">
+      <h2>Solutions</h2>
+    </div>
+
+
+    <section class="testimonials">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-4 text-center wow bounceInUp">
+            <div class="profile">
+              <img src="images/solution1.svg" class="users" alt="">
+              <h3>Digital Sovereign Identity</h3>
+              <p>Blockchain is a solution to numerous digital identity problems through its decentralized nature,
+                transparency of data usage, KYC costs reduction, availability of verified claims and ease of</p>
+              <a href="#" class="btn color-blue">READ MORE</a>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-4 text-center wow bounceInUp">
+            <div class="profile">
+              <img src="images/solution2.svg" class="users" alt="">
+              <h3>Decentralized Finance</h3>
+              <p>DeFi because of its non-custodial nature, better use experience, totality of transparency and
+                borderless nature it solves problems regarding custody of funds, lack of transparency and</p>
+              <a href="#" class="btn color-blue">READ MORE</a>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-4 text-center wow bounceInUp">
+            <div class="profile">
+              <img src="images/solution3.svg" class="users" alt="">
+              <h3>Supply Chain</h3>
+              <p>Blockchain provides solutions to Supply Chain-associated problems by seamlessly linking financial,
+                information and inventory flow in Supply Chain. Moreover, tamperproof data and usag</p>
+              <a href="#" class="btn color-blue">READ MORE</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-4 text-center wow bounceInUp">
+            <div class="profile">
+              <img src="images/solution4.svg" class="users" alt="">
+              <h3>Side Chain / On-Chain</h3>
+              <p>Sidechains offer solutions to combat various problems such as low TPS, inflexibility in trading between
+                currencies and high innovation cost by allowing transactions across various</p>
+              <a href="#" class="btn color-blue">READ MORE</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-4 text-center wow bounceInUp">
+            <div class="profile">
+              <img src="images/solution5.svg" class="users" alt="">
+              <h3>Asset Tokenization</h3>
+              <p>Issues related regulatory alignment, volatility in the prices of securities and determination of value
+                assets can be solved by Asset Tokenization through development of smart contracts,</p>
+              <a href="#" class="btn color-blue">READ MORE</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-4 text-center wow bounceInUp">
+            <div class="profile">
+              <img src="images/solution6.svg" class="users" alt="">
+              <h3>Supply Chain</h3>
+              <p>Security issues, high cost and requirements of KYC poses problems in centralized asset exchanges. These
+                problems can be tackled by Blockchain through easy access due to its</p>
+              <a href="#" class="btn color-blue">READ MORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+  <!-- solution  -->
+  <marquee behavior="scroll" class="bg-dark text-white" scrollamount="10" direction="left">
+    <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet debitis quas ipsam, nihil sapiente
+      similique exercitationem, atque iste eum veniam est qui sequi vel. Illum commodi molestias fuga cum. Distinctio.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet debitis quas ipsam, nihil sapiente similique
+      exercitationem, atque iste eum veniam est qui sequi vel. Illum commodi molestias fuga cum. Distinctio.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet debitis quas ipsam, nihil sapiente similique
+      exercitationem, atque iste eum veniam est qui sequi vel. Illum commodi molestias fuga cum. Distinctio.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet debitis quas ipsam, nihil sapiente similique
+      exercitationem, atque iste eum veniam est qui sequi vel. Illum commodi molestias fuga cum. Distinctio.
+    </p>
+  </marquee>
+
+
+
+  <!-- work -->
+  <section id="about">
+    <div class="mainheading my-3 fadeInUp">
+      <h2>We Love Working With Startups</h2>
+    </div>
+
+
+    <section class="work">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 .col-md-6 .col-sm-12 text-center wow bounceInUp">
+            <div class="profile">
+              <div class="imgtext">
+                <img src="images/work1.svg" class="users" alt="">
+                <h1>1</h1>
+              </div>
+              <h3>Free Consulting Session and Idea Refinement</h3>
+              <p>We will work with your team to refine the idea and suggest improvements.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 .col-md-6 .col-sm-12 text-center wow bounceInUp" data-wow-delay=".1s">
+            <div class="profile">
+              <div class="imgtext">
+                <img src="images/work2.svg" class="users" alt="">
+                <h1>2</h1>
+              </div>
+              <h3>Architecture & User Experience Design</h3>
+              <p>We will do our research to design the system architecture and user interface.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 .col-md-6 .col-sm-12 text-center wow bounceInUp" data-wow-delay=".2s">
+            <div class="profile">
+              <div class="imgtext">
+                <img src="images/work3.svg" class="users" alt="">
+                <h1>3</h1>
+              </div>
+              <h3>Offer Quick Minimal Viable Product Delivery</h3>
+              <p>We will prioritize your work to deliver a quick working MVP.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 .col-md-6 .col-sm-12 text-center wow bounceInUp" data-wow-delay=".3s">
+            <div class="profile">
+              <div class="imgtext">
+                <img src="images/work4.svg" class="users" alt="">
+                <h1>4</h1>
+              </div>
+              <h3>Pitch Deck Creation & Fundraising Support</h3>
+              <p>We will help your startup get off the ground.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+  </section>
+  <!-- work -->
+
+  <!-- team  -->
+  <section id="team">
+    <div class="team">
+      <div class="mainheading my-3 wow fadeInUp">
+        <h2>Meet The <span class="color-blue">Team</span></h2>
+      </div>
+
+      <div class="teamcards">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp">
+              <div class="card">
+                <img src="images/team1.png" class="card-img-top img-fluid mx-auto" alt="team-card">
+                <div class="card-body">
+                  <h5 class="card-title">Abdul Sami</h5>
+                  <p class="card-text">Founder & CEO</p>
+                  <div class="links">
+                    <a href="#" class="iconset"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="iconset"><i class="fab fa-skype"></i></a>
+                    <a href="#" class="iconset"><i class="fab fa-telegram"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay=".1s">
+              <div class="card">
+                <img src="images/team1.png" class="card-img-top img-fluid mx-auto" alt="team-card">
+                <div class="card-body">
+                  <h5 class="card-title">Kashan Siddiqui</h5>
+                  <p class="card-text">Head of Solutions</p>
+                  <div class="links">
+                    <a href="#" class="iconset"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="iconset"><i class="fab fa-skype"></i></a>
+                    <a href="#" class="iconset"><i class="fab fa-telegram"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay=".2s">
+              <div class="card">
+                <img src="images/team1.png" class="card-img-top img-fluid mx-auto" alt="team-card">
+                <div class="card-body">
+                  <h5 class="card-title">Syed Fahad Hussain</h5>
+                  <p class="card-text">Head of Operations</p>
+                  <div class="links">
+                    <a href="#" class="iconset"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="iconset"><i class="fab fa-skype"></i></a>
+                    <a href="#" class="iconset"><i class="fab fa-telegram"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay=".3s">
+              <div class="card">
+                <img src="images/team1.png" class="card-img-top img-fluid mx-auto" alt="team-card">
+                <div class="card-body">
+                  <h5 class="card-title">Shakeib Shaida</h5>
+                  <p class="card-text">CTO & Head of Research</p>
+                  <div class="links">
+                    <a href="#" class="iconset"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="iconset"><i class="fab fa-skype"></i></a>
+                    <a href="#" class="iconset"><i class="fab fa-telegram"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- team  -->
+
+
+  <!-- workimg -->
+
+  <section id="workimg">
+    <div class="mainheading wow fadeInUp">
+      <h2>Work</h2>
+    </div>
+
+
+    <div class="cardimages">
+      <div class="row my-3 wow fadeInUp">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="card bg-dark text-white">
+            <img src="images/workimg1.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Phoenix DAO Event Marketplace</h5>
+              <div class="inlinetexts">
+                <p class="card-text">DApp</p>
+                <p class="card-text">Digital Identity</p>
+                <p class="card-text">Ethereum</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="card bg-dark text-white">
+            <img src="images/workimg2.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Numeo App</h5>
+              <div class="inlinetexts">
+                <p class="card-text">DApp</p>
+                <p class="card-text">Digital Identity</p>
+                <p class="card-text">Ethereum</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="card bg-dark text-white">
+            <img src="images/workimg3.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Tipply Tank</h5>
+              <div class="inlinetexts">
+                <p class="card-text">DApp</p>
+                <p class="card-text">Digital Identity</p>
+                <p class="card-text">Ethereum</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-3 wow fadeInUp">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="card bg-dark text-white">
+            <img src="images/workimg6.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Vaccify – a COVID19 initiative</h5>
+              <div class="inlinetexts">
+                <p class="card-text">DApp</p>
+                <p class="card-text">Digital Identity</p>
+                <p class="card-text">Ethereum</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="card bg-dark text-white">
+            <img src="images/workimg5.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">XIO Token Swap</h5>
+              <div class="inlinetexts">
+                <p class="card-text">DApp</p>
+                <p class="card-text">Digital Identity</p>
+                <p class="card-text">Ethereum</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="card bg-dark text-white">
+            <img src="images/workimg6.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Anoubis Limited</h5>
+              <div class="inlinetexts">
+                <p class="card-text">DApp</p>
+                <p class="card-text">Digital Identity</p>
+                <p class="card-text">Ethereum</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- workimg -->
+
+  <!-- Publications -->
+
+  <section id="publications">
+    <div class="mainheading my-3 wow fadeInUp">
+      <h2>Publications</h2>
+    </div>
+
+
+    <div id="carouselExampleIndicators" class="carousel slide wow flipInX" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="publicationcards">
+            <div class="row my-5">
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="card">
+                  <img src="images/publication5.jpg" class="card-img-top img-fluid" alt="...">
+                  <div class="cardshadow">
+                    <div class="card-body">
+                      <p class="card-text">
+                        ConsenSys Quorum Blockchain: A Comprehensive Review </p>
+                      <p><i class="fa fa-clock-o"></i> April 1,2021</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="card">
+                  <img src="images/publication2.jpg" class="card-img-top img-fluid" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">
+                      ConsenSys Quorum Blockchain: A Comprehensive Review </p>
+                    <p><i class="fa fa-clock-o"></i> April 1,2021</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="card">
+                  <img src="images/publication3.jpg" class="card-img-top img-fluid" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">
+                      ConsenSys Quorum Blockchain: A Comprehensive Review </p>
+                    <p><i class="fa fa-clock-o"></i> April 1,2021</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="publicationcards">
+            <div class="row my-5">
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="card">
+                  <img src="images/publication3.jpg" class="card-img-top img-fluid" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">
+                      ConsenSys Quorum Blockchain: A Comprehensive Review </p>
+                    <p><i class="fa fa-clock-o"></i> April 1,2021</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="card">
+                  <img src="images/publication4.jpg" class="card-img-top img-fluid" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">
+                      ConsenSys Quorum Blockchain: A Comprehensive Review </p>
+                    <p><i class="fa fa-clock-o"></i> April 1,2021</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="card">
+                  <img src="images/publication5.jpg" class="card-img-top img-fluid" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">
+                      ConsenSys Quorum Blockchain: A Comprehensive Review </p>
+                    <p><i class="fa fa-clock-o"></i> April 1,2021</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="carouselExampleIndicators1" class="carousel carouselhalfwidth slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="publicationcards">
+            <div class="row my-5">
+              <div class="card">
+                <img src="images/publication1.jpg" class="card-img-top img-fluid" alt="...">
+                <div class="cardshadow">
+                  <div class="card-body">
+                    <p class="card-text">
+                      ConsenSys Quorum Blockchain: A Comprehensive Review </p>
+                    <p><i class="fa fa-clock-o"></i> April 1,2021</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="publicationcards">
+            <div class="row my-5">
+              <div class="card">
+                <img src="images/publication2.jpg" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                  <p class="card-text">
+                    ConsenSys Quorum Blockchain: A Comprehensive Review </p>
+                  <p><i class="fa fa-clock-o"></i> April 1,2021</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="publicationcards">
+            <div class="row my-5">
+              <div class="card">
+                <img src="images/publication3.jpg" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                  <p class="card-text">
+                    ConsenSys Quorum Blockchain: A Comprehensive Review </p>
+                  <p><i class="fa fa-clock-o"></i> April 1,2021</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="publicationcards">
+            <div class="row my-5">
+              <div class="card">
+                <img src="images/publication4.jpg" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                  <p class="card-text">
+                    ConsenSys Quorum Blockchain: A Comprehensive Review </p>
+                  <p><i class="fa fa-clock-o"></i> April 1,2021</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="publicationcards">
+            <div class="row my-5">
+              <div class="card">
+                <img src="images/publication5.jpg" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                  <p class="card-text">
+                    ConsenSys Quorum Blockchain: A Comprehensive Review </p>
+                  <p><i class="fa fa-clock-o"></i> April 1,2021</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Publications -->
+
+  <!-- contact  -->
+  <section id="contact">
+
+    <div class="contacthead">
+      <div class="row wow fadeInDown">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="getintouchheading">
+            <h1>Get in touch!</h1>
+            <p>Ask your questions, make proposals, and make price inquiries.</p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <center>
+            <div class="inlinecontact">
+              <div class="icon">
+                <i class="fas fa-phone-alt"></i>
+                <div class="card-body">
+                  <p class="card-text">+92 332 3048550</p>
+                </div>
+              </div>
+              <div class="icon">
+                <i class="fas fa-envelope"></i>
+                <div class="card-body">
+                  <p class="card-text">contact@xord.com</p>
+                </div>
+              </div>
+            </div>
+          </center>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="contactbottom">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 wow slideInLeft">
+          <div class="card">
+            <img src="images/team1.png" class="card-img-top img-fluid mx-auto" alt="team-card">
+            <div class="card-body">
+              <h5 class="card-title">Salman Khan</h5>
+              <p class="card-text">Co-founder & CSMO</p>
+              <p class="my-5 text-white">Get FREE consultation for your blockchain products.</p>
+              <div class="links">
+                <center>
+                  <div class="btn1 w-50 background-color-blue">Schedule a meeting</div>
+                </center>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 col-md-6 col-sm-12 my-auto wow slideInRight">
+          <form autocomplate="off" method="post">
+            <div class="mb-3">
+              <input type="name" class="form-control shadow-none" id="exampleFormControlInput1" placeholder="Name"
+                name="fname">
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control shadow-none" id="exampleFormControlInput2" placeholder="Email"
+                name="email">
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control shadow-none" id="exampleFormControlTextarea1" placeholder="Your Message..."
+                rows="3" name="message"></textarea>
+            </div>
+            <div>
+
+              <button class="btn1 background-color-blue" id="sendbutton" name="send">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- contact  -->
+
+
+
+  <!-- alerts  -->
+
+  <!-- <div class="alertsss">
+
+    <div class="alert hide alert-success alert-dismissible fade show" role="alert">
+      <i class="fas fa-check-circle"></i>
+      <strong>Congratulation!</strong> Your message has been submitted we will contact you soon.
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <div class="alert hide alert-warning alert-dismissible fade show" role="alert">
+      <i class="fas fa-exclamation-circle"></i>
+      <strong>Oops!</strong> Message not send poor connection.
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+
+  </div> -->
+
+  <!-- alerts  -->
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- sticky header  -->
+  <script>
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0)
+    })
+  </script>
+  <!-- sticky header  -->
+
+
+  <script>
+    let input1 = document.querySelector("#exampleFormControlInput1");
+    let input2 = document.querySelector("#exampleFormControlInput2");
+    let input3 = document.querySelector("#exampleFormControlTextarea1");
+    let button = document.querySelector("#sendbutton");
+
+    button.disabled = true;
+
+    input1.addEventListener("change", stateHandle);
+    input2.addEventListener("change", stateHandle);
+    input3.addEventListener("change", stateHandle);
+
+    function stateHandle() {
+      if (document.querySelector("#exampleFormControlInput1").value === "" || document.querySelector("#exampleFormControlInput2").value === "" || document.querySelector("#exampleFormControlTextarea1").value === "") {
+        button.disabled = true;
+      } else {
+        button.disabled = false;
+      }
+    }
+
+  </script>
+
+
+  <script src="assest/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+
+</body>
+
+</html>
