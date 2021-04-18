@@ -106,7 +106,7 @@ header.sticky .navbutton .btn1{
 }
 #home .maincontent{
     position: absolute !important;
-    top: 25% !important;
+    Botton: 20℅ !important;
     color: #fff !important;
     left: 60px !important;
 }
@@ -738,7 +738,7 @@ header.sticky .navbutton .btn1{
 }
 
 #home .elementor-background-overlay {
-    height:  150%;
+    height:  100%;
     width: 100%;
     top: 0;
     left: 0;
@@ -751,7 +751,7 @@ header.sticky .navbutton .btn1{
 #home .maincontent{
     width: 90% !important;
     position: absolute !important;
-    top: 15% !important;
+    bottom: 10% !important;
     color: #fff !important;
     left: 20px !important;
 }
