@@ -729,6 +729,7 @@ header.sticky .navbutton .btn1{
 }
 #home {
     background-color: #000 !important;
+    height: 75vh !important;
 }
  #home .elementor-background-overlay {
     background-color: transparent !important;
